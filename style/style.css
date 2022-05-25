@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+:root {
+  --primary-violet: hsl(257, 40%, 49%);
+  --primary-soft-magenta: hsl(300, 69%, 71%);
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: var(--primary-violet) url(/images/bg-mobile.svg) no-repeat fixed
+    top;
+  background-size: contain;
+}
+
+img.logo {
+  margin: 10vh 15vw;
+  width: 40%;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img.illustration {
+  width: 80%;
+  height: auto;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+}
+
+.right {
+  padding: 6vh 5vw;
+}
+
+.right p {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  text-align: center;
+  padding: 1vh 3vw;
+}
+
+a.register {
+  display: block;
+  background-color: #fff;
+  text-align: center;
+  height: 7vh;
+  width: 55vw;
+  line-height: 6.5vh;
+  margin: auto;
+  border-radius: 25em;
+  color: var(--primary-violet);
+  font-family: "Poppins", sans-serif;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto 35vw;
+}
+
+footer a {
+  margin: auto;
+  color: #fff;
+  border: #fff solid 1px;
+  border-radius: 100%;
+  width: 6vw;
+  height: 4vh;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 376px) {
+  body {
+    background-image: url(/images/bg-desktop.svg);
+  }
+
+  img.logo {
+    margin: 10vh 10vw;
+    width: 15%;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+
+  a.register {
+    width: 12vw;
+  }
+
+  .right {
+    padding: 2.5vw 3vw 0 0;
+    margin-left: -5vw;
+  }
+
+  h1,
+  .right p {
+    text-align: left;
+    padding-left: 0;
+    padding-right: 3vw;
+  }
+
+  h1 {
+    font-size: 3vw;
+    margin: 0;
+  }
+
+  a.register {
+    margin: 0;
+  }
+
+  a.register:hover {
+    background-color: var(--primary-soft-magenta);
+  }
+
+  img.illustration {
+    width: 65%;
+  }
+
+  footer {
+    margin-right: 10vw;
+    margin-left: 78%;
+  }
+
+  footer a {
+    margin: 0 0.8vw;
+  }
+
+  footer a:hover {
+    background-color: var(--primary-soft-magenta);
+  }
+}
